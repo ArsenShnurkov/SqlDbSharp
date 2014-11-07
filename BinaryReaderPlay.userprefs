@@ -1,16 +1,57 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="BinaryReaderPlay\org\rufwork\mooresDb\infrastructure\commands\CreateTableCommand.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ISQL/org/rufwork/mooresDb/clients/Isql.cs">
     <Files>
-      <File FileName="BinaryReaderPlay\Main.cs" Line="1" Column="1" />
-      <File FileName="BinaryReaderPlay\org\rufwork\utils\Utils.cs" Line="1" Column="1" />
-      <File FileName="BinaryReaderPlay\org\rufwork\utils\GlobalEnums.cs" Line="1" Column="1" />
-      <File FileName="BinaryReaderPlay\org\rufwork\mooresDb\clients\Isql.cs" Line="1" Column="1" />
-      <File FileName="BinaryReaderPlay\org\rufwork\mooresDb\infrastructure\commands\CreateTableCommand.cs" Line="52" Column="67" />
+      <File FileName="ISQL/org/rufwork/mooresDb/clients/Isql.cs" Line="177" Column="1" />
+      <File FileName="ISQL/Properties/AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="BinaryReaderPlay/org/rufwork/mooresDb/exceptions/ColumnNotFoundException.cs" Line="1" Column="1" />
+      <File FileName="BinaryReaderPlay/org/rufwork/mooresDb/exceptions/ImproperDatabaseFileException.cs" Line="1" Column="1" />
+      <File FileName="BinaryReaderPlay/org/rufwork/mooresDb/exceptions/SyntaxException.cs" Line="1" Column="1" />
+      <File FileName="BinaryReaderPlay/org/rufwork/mooresDb/SqlDbSharpLogger.cs" Line="1" Column="1" />
+      <File FileName="BinaryReaderPlay/org/rufwork/mooresDb/infrastructure/InfrastructureUtils.cs" Line="1" Column="1" />
+      <File FileName="BinaryReaderPlay/org/rufwork/mooresDb/infrastructure/Comparison.cs" Line="1" Column="1" />
+      <File FileName="BinaryReaderPlay/org/rufwork/mooresDb/infrastructure/CommandParser.cs" Line="1" Column="1" />
+      <File FileName="BinaryReaderPlay/org/rufwork/mooresDb/infrastructure/tableParts/Column.cs" Line="29" Column="15" />
+      <File FileName="BinaryReaderPlay/org/rufwork/utils/GlobalEnums.cs" Line="1" Column="1" />
+      <File FileName="BinaryReaderPlay/org/rufwork/utils/Utils.cs" Line="1" Column="1" />
+      <File FileName="BinaryReaderPlay/Main.cs" Line="1" Column="1" />
+      <File FileName="BinaryReaderPlay/AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="BinaryReaderPlay/org/rufwork/mooresDb/infrastructure/commands/CreateTableCommand.cs" Line="1" Column="1" />
+      <File FileName="BinaryReaderPlay/org/rufwork/mooresDb/infrastructure/commands/DropTableCommand.cs" Line="1" Column="1" />
+      <File FileName="BinaryReaderPlay/org/rufwork/mooresDb/infrastructure/commands/Modifiers/CompositeColumnValueModifier.cs" Line="1" Column="1" />
+      <File FileName="BinaryReaderPlay/org/rufwork/mooresDb/infrastructure/commands/Processors/CommandParts.cs" Line="1" Column="1" />
+      <File FileName="BinaryReaderPlay/org/rufwork/mooresDb/infrastructure/commands/Processors/WhereProcessor.cs" Line="1" Column="1" />
+      <File FileName="BinaryReaderPlay/org/rufwork/mooresDb/infrastructure/commands/SelectCommand.cs" Line="1" Column="1" />
+      <File FileName="BinaryReaderPlay/org/rufwork/mooresDb/infrastructure/commands/SelectMaxCommand.cs" Line="1" Column="1" />
+      <File FileName="BinaryReaderPlay/org/rufwork/mooresDb/infrastructure/commands/InsertCommand.cs" Line="1" Column="1" />
+      <File FileName="ISQL/App.config" Line="1" Column="1" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="ISQL" expanded="True" selected="True">
+            <Node name="References" expanded="True" />
+            <Node name="org" expanded="True">
+              <Node name="rufwork" expanded="True">
+                <Node name="mooresDb" expanded="True">
+                  <Node name="clients" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+            <Node name="Properties" expanded="True" />
+          </Node>
+          <Node name="RufworkExtensions" expanded="True" />
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/var/calculate/remote/distfiles/egit-src/SqlDbSharp/ISQL/org/rufwork/mooresDb/clients/Isql.cs" line="84" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
