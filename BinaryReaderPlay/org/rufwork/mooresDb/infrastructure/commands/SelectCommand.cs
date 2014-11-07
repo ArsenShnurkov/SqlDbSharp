@@ -208,7 +208,7 @@ namespace org.rufwork.mooresDb.infrastructure.commands
                 qColsToSelectInNewTable.EnqueueIfNotContains(strNewField);
 
                 // 2.) ORDER BY fields that belong to this table.
-                if (!string.IsNullOrWhiteSpace(strOrderBy))
+                if (!string.IsNullOrEmpty(strOrderBy.Trim()))
                 {
                     string[] astrOrderTokens = strOrderBy.StringToNonWhitespaceTokens2();
                     for (int i = 2; i < astrOrderTokens.Length; i++)

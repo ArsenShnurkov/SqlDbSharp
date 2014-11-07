@@ -13,7 +13,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-using System.Data;
 using System.IO;
 using System.Text.RegularExpressions;
 using org.rufwork.mooresDb.infrastructure.tableParts;
@@ -110,7 +109,7 @@ namespace org.rufwork.mooresDb.infrastructure.commands  {
         {
             List<Comparison> lstReturn = new List<Comparison>();
 
-            if (!string.IsNullOrWhiteSpace(strWhere)) {
+            if (!string.IsNullOrEmpty(strWhere.Trim())) {
                 strWhere = strWhere.Substring(6);
                 //string[] astrClauses = Regex.Split (strWhere, @"AND");
                 string[] astrClauses = strWhere.Split(new string[] { "AND" }, StringSplitOptions.None);

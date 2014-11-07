@@ -1,8 +1,8 @@
-﻿<Properties>
+﻿<Properties GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ISQL/org/rufwork/mooresDb/clients/Isql.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BinaryReaderPlay/org/rufwork/mooresDb/infrastructure/CommandParser.cs">
     <Files>
-      <File FileName="ISQL/org/rufwork/mooresDb/clients/Isql.cs" Line="177" Column="1" />
+      <File FileName="ISQL/org/rufwork/mooresDb/clients/Isql.cs" Line="183" Column="23" />
       <File FileName="ISQL/Properties/AssemblyInfo.cs" Line="1" Column="1" />
       <File FileName="BinaryReaderPlay/org/rufwork/mooresDb/exceptions/ColumnNotFoundException.cs" Line="1" Column="1" />
       <File FileName="BinaryReaderPlay/org/rufwork/mooresDb/exceptions/ImproperDatabaseFileException.cs" Line="1" Column="1" />
@@ -10,7 +10,7 @@
       <File FileName="BinaryReaderPlay/org/rufwork/mooresDb/SqlDbSharpLogger.cs" Line="1" Column="1" />
       <File FileName="BinaryReaderPlay/org/rufwork/mooresDb/infrastructure/InfrastructureUtils.cs" Line="1" Column="1" />
       <File FileName="BinaryReaderPlay/org/rufwork/mooresDb/infrastructure/Comparison.cs" Line="1" Column="1" />
-      <File FileName="BinaryReaderPlay/org/rufwork/mooresDb/infrastructure/CommandParser.cs" Line="1" Column="1" />
+      <File FileName="BinaryReaderPlay/org/rufwork/mooresDb/infrastructure/CommandParser.cs" Line="61" Column="14" />
       <File FileName="BinaryReaderPlay/org/rufwork/mooresDb/infrastructure/tableParts/Column.cs" Line="29" Column="15" />
       <File FileName="BinaryReaderPlay/org/rufwork/utils/GlobalEnums.cs" Line="1" Column="1" />
       <File FileName="BinaryReaderPlay/org/rufwork/utils/Utils.cs" Line="1" Column="1" />
@@ -25,22 +25,20 @@
       <File FileName="BinaryReaderPlay/org/rufwork/mooresDb/infrastructure/commands/SelectMaxCommand.cs" Line="1" Column="1" />
       <File FileName="BinaryReaderPlay/org/rufwork/mooresDb/infrastructure/commands/InsertCommand.cs" Line="1" Column="1" />
       <File FileName="ISQL/App.config" Line="1" Column="1" />
+      <File FileName="../RufworkExtensions/org/rufwork/extensions/StringExtensions.cs" Line="355" Column="20" />
+      <File FileName="../RufworkExtensions/org/rufwork/extensions/DateTimeNullableExtensions.cs" Line="23" Column="1" />
+      <File FileName="../RufworkExtensions/org/rufwork/extensions/DictionaryOfStringsExtensions.cs" Line="1" Column="1" />
+      <File FileName="../RufworkExtensions/org/rufwork/extensions/IEnumerableExtensions.cs" Line="1" Column="1" />
+      <File FileName="../RufworkExtensions/org/rufwork/extensions/ListExtensions.cs" Line="1" Column="1" />
+      <File FileName="../RufworkExtensions/org/rufwork/extensions/ObjectExtensions.cs" Line="1" Column="1" />
+      <File FileName="../RufworkExtensions/org/rufwork/extensions/QueueExtensions.cs" Line="1" Column="1" />
+      <File FileName="../RufworkExtensions/org/rufwork/extensions/XElementExtensions.cs" Line="29" Column="15" />
+      <File FileName="BinaryReaderPlay/org/rufwork/mooresDb/infrastructure/contexts/DatabaseContext.cs" Line="20" Column="25" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="ISQL" expanded="True" selected="True">
-            <Node name="References" expanded="True" />
-            <Node name="org" expanded="True">
-              <Node name="rufwork" expanded="True">
-                <Node name="mooresDb" expanded="True">
-                  <Node name="clients" expanded="True" />
-                </Node>
-              </Node>
-            </Node>
-            <Node name="Properties" expanded="True" />
-          </Node>
-          <Node name="RufworkExtensions" expanded="True" />
+          <Node name="BinaryReaderPlay" selected="True" />
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
@@ -51,6 +49,7 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/var/calculate/remote/distfiles/egit-src/SqlDbSharp/ISQL/org/rufwork/mooresDb/clients/Isql.cs" line="84" column="1" />
+      <Catchpoint exceptionName="System.IndexOutOfRangeException" includeSubclasses="True" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

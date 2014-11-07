@@ -134,7 +134,7 @@ namespace org.rufwork.mooresDb.infrastructure.commands.Modifiers
 
         public CompositeColumnValueModifier(string strValue, Column column, bool isAdditionModifierNotSubtraction)
         {
-            if (string.IsNullOrWhiteSpace(strValue))
+            if (string.IsNullOrEmpty(strValue.Trim()))
             {
                 if (null == column)
                 {

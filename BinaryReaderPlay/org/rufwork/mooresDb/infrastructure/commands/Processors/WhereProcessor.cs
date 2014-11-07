@@ -294,7 +294,7 @@ namespace org.rufwork.mooresDb.infrastructure.commands.Processors
         {
             List<Comparison> lstReturn = new List<Comparison>();
 
-            if (!string.IsNullOrWhiteSpace(strWhere))
+            if (!string.IsNullOrEmpty(strWhere.Trim()))
             {
                 strWhere = strWhere.Substring(6);
                 string[] astrClauses = strWhere.SplitSeeingSingleQuotesAndBackticks("AND", false).ToArray();

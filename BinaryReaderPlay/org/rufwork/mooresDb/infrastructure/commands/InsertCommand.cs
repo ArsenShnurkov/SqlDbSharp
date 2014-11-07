@@ -89,8 +89,8 @@ namespace org.rufwork.mooresDb.infrastructure.commands
                 // separate bits of logic.
                 if (lstStringRowValues.Count != lstColumnNames.Count)    {
                     throw new Exception("Number of insert command columns and number of values are different; cannot insert row: " + Environment.NewLine
-                        + "Names: " + String.Join(", ", lstColumnNames) + Environment.NewLine
-                        + "Values: " + String.Join(", ", lstStringRowValues) + Environment.NewLine);
+                        + "Names: " + String.Join(", ", lstColumnNames.ToArray()) + Environment.NewLine
+                        + "Values: " + String.Join(", ", lstStringRowValues.ToArray()) + Environment.NewLine);
                 }   else {
                     if (MainClass.bDebug)
                     {

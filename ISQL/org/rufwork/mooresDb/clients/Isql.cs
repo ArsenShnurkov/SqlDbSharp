@@ -194,10 +194,10 @@ SqlDbSharp.config, placed in this folder:
                         }
                         else
                         {
-							if (!string.IsNullOrWhiteSpace(strCmd))
+							if (!string.IsNullOrEmpty(strCmd.Trim()))
                             try
                             {
-                                CommandParser parser = new CommandParser(dbTemp);
+								CommandParser parser = new CommandParser(dbTemp);
                                 object objResult = parser.executeCommand(strCmd);
 
                                 if (objResult is DataTable)
