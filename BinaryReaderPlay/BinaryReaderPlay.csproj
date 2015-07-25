@@ -3,8 +3,6 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{21089A8D-6944-4C6E-90F5-61BE82C9919C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>org</RootNamespace>
@@ -23,7 +21,6 @@
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <Externalconsole>True</Externalconsole>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
@@ -35,18 +32,13 @@
     <PlatformTarget>x86</PlatformTarget>
     <Externalconsole>True</Externalconsole>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject>
-    </StartupObject>
-  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="RufworkExtensions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\RufworkExtensions.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="RufworkExtensions">
+      <HintPath>..\lib\RufworkExtensions.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
@@ -80,6 +72,23 @@
     <Compile Include="org\rufwork\mooresDb\infrastructure\tableParts\Column.cs" />
     <Compile Include="org\rufwork\mooresDb\infrastructure\contexts\DatabaseContext.cs" />
     <Compile Include="org\rufwork\mooresDb\infrastructure\contexts\TableContext.cs" />
+    <Compile Include="Provider_AdoNet\Command.cs" />
+    <Compile Include="Provider_AdoNet\CommandBuilder.cs" />
+    <Compile Include="Provider_AdoNet\CommandBuilderBase.cs" />
+    <Compile Include="Provider_AdoNet\CommandBuilderBehavior.cs" />
+    <Compile Include="Provider_AdoNet\Connection.cs" />
+    <Compile Include="Provider_AdoNet\ConnectionStringBuilder.cs" />
+    <Compile Include="Provider_AdoNet\DataAdapter.cs" />
+    <Compile Include="Provider_AdoNet\DbProviderFactory.cs" />
+    <Compile Include="Provider_AdoNet\Error.cs" />
+    <Compile Include="Provider_AdoNet\ErrorCollection.cs" />
+    <Compile Include="Provider_AdoNet\Events.cs" />
+    <Compile Include="Provider_AdoNet\Exception.cs" />
+    <Compile Include="Provider_AdoNet\Parameter.cs" />
+    <Compile Include="Provider_AdoNet\ParameterCollection.cs" />
+    <Compile Include="Provider_AdoNet\Reader.cs" />
+    <Compile Include="Provider_AdoNet\Transaction.cs" />
+    <Compile Include="Provider_AdoNet\_MissingClasses.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup />
@@ -94,4 +103,13 @@
     </MonoDevelop>
   </ProjectExtensions>
   <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Provider_AdoNet\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Provider_AdoNet\CommandBuilder.resx" />
+    <None Include="Provider_AdoNet\Connection.resx" />
+    <None Include="Provider_AdoNet\Command.resx" />
+    <None Include="Provider_AdoNet\Reader.resx" />
+  </ItemGroup>
 </Project>

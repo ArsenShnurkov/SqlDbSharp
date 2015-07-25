@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DEAFCB16-9BC4-4D3A-A850-C3B9423026C5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>System.Data.Hsql.Linq</RootNamespace>
+    <AssemblyName>SqlDbSharp.Linq</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG; TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Xml" />
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlDbSharpProviderServices.cs" />
+    <Compile Include="SqlDbSharpProviderManifest.cs" />
+    <Compile Include="MetadataHelpers.cs" />
+    <Compile Include="SqlDbSharpDateFormats.cs" />
+    <Compile Include="SQL_Generation\SqlGenerator.cs" />
+    <Compile Include="SQL_Generation\SqlBuilder.cs" />
+    <Compile Include="SQL_Generation\SqlWriter.cs" />
+    <Compile Include="SQL_Generation\SqlSelectStatement.cs" />
+    <Compile Include="SQL_Generation\ISqlFragment.cs" />
+    <Compile Include="SQL_Generation\SymbolTable.cs" />
+    <Compile Include="SQL_Generation\Symbol.cs" />
+    <Compile Include="SQL_Generation\KeyToListMap.cs" />
+    <Compile Include="SQL_Generation\InternalBase.cs" />
+    <Compile Include="SQL_Generation\TopClause.cs" />
+    <Compile Include="SQL_Generation\SkipClause.cs" />
+    <Compile Include="DmlSqlGenerator.cs" />
+    <Compile Include="SQL_Generation\JoinSymbol.cs" />
+    <Compile Include="SQL_Generation\SymbolPair.cs" />
+    <Compile Include="SQL_Generation\StringUtil.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlDbSharpConvert.cs" />
+    <Compile Include="ISqlDbSharpSchemaExtensions.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Properties\Resources.resx">
+      <CustomToolNamespace>Properties</CustomToolNamespace>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SQL_Generation\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\SqlDbSharpProviderServices.ProviderManifest.xml" />
+    <EmbeddedResource Include="Resources\SQLiteProviderServices.StoreSchemaDefinition.ssdl" />
+    <EmbeddedResource Include="Resources\SQLiteProviderServices.StoreSchemaMapping.msl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BinaryReaderPlay\BinaryReaderPlay.csproj">
+      <Project>{21089A8D-6944-4C6E-90F5-61BE82C9919C}</Project>
+      <Name>BinaryReaderPlay</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

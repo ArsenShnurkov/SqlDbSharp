@@ -1,0 +1,13 @@
+/var/calculate/remote/distfiles/egit-src/SqlDbSharp.git/EF-test/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/var/calculate/remote/distfiles/egit-src/SqlDbSharp.git/EF-test/bin/Debug/EF-Test.exe.config
+/var/calculate/remote/distfiles/egit-src/SqlDbSharp.git/EF-test/bin/Debug/EF-Test.exe.mdb
+/var/calculate/remote/distfiles/egit-src/SqlDbSharp.git/EF-test/bin/Debug/EF-Test.exe
+/var/calculate/remote/distfiles/egit-src/SqlDbSharp.git/EF-test/obj/x86/Debug/EF-Test.exe
+/var/calculate/remote/distfiles/egit-src/SqlDbSharp.git/EF-test/obj/x86/Debug/EF-Test.exe.mdb
+/var/calculate/remote/distfiles/egit-src/SqlDbSharp.git/EF-test/bin/Debug/EntityFramework.dll
+/var/calculate/remote/distfiles/egit-src/SqlDbSharp.git/EF-test/bin/Debug/EntityFramework.SqlServer.dll
+/var/calculate/remote/distfiles/egit-src/SqlDbSharp.git/EF-test/bin/Debug/SqlDbSharp.Linq.dll
+/var/calculate/remote/distfiles/egit-src/SqlDbSharp.git/EF-test/bin/Debug/SqlDbSharp.Linq.dll.mdb
+/var/calculate/remote/distfiles/egit-src/SqlDbSharp.git/EF-test/bin/Debug/BinaryReaderPlay.dll
+/var/calculate/remote/distfiles/egit-src/SqlDbSharp.git/EF-test/bin/Debug/BinaryReaderPlay.dll.mdb
+/var/calculate/remote/distfiles/egit-src/SqlDbSharp.git/EF-test/bin/Debug/RufworkExtensions.dll
