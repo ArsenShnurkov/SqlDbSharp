@@ -8,6 +8,7 @@ namespace System.Data.SqlDbSharp
     using System.Data.Common;
 
     using org.rufwork.mooresDb;
+    using org.rufwork.mooresDb.infrastructure.tableParts;
 
 	/// <summary>
 	/// Reader class for Hsql ADO.NET data provider.
@@ -586,60 +587,59 @@ namespace System.Data.SqlDbSharp
          
 		}
 
-		private static Type GetDataType( ColumnType type )
+		private static Type GetDataType( COLUMN_TYPES type )
 		{
             throw new NotImplementedException (); // MERGE_AS
-/*
+
 			switch( type )
 			{
-				case ColumnType.BigInt:
-					return typeof(long);
-				case ColumnType.Binary:
-					return typeof(byte[]);
-				case ColumnType.Bit:
+//            case COLUMN_TYPES.BigInt:
+//					return typeof(long);
+//            case COLUMN_TYPES.Binary:
+//					return typeof(byte[]);
+            case COLUMN_TYPES.BIT:
 					return typeof(bool);
-				case ColumnType.Char:
-					return typeof(string);
-				case ColumnType.Date:
-					return typeof(DateTime);
-				case ColumnType.DbDecimal:
+//            case COLUMN_TYPES.Char:
+//					return typeof(string);
+            case COLUMN_TYPES.DATETIME:
+                return typeof(DateTime);
+            case COLUMN_TYPES.DECIMAL:
 					return typeof(Decimal);
-				case ColumnType.DbDouble:
-					return typeof(Double);
-				case ColumnType.Float:
+//            case COLUMN_TYPES.DbDouble:
+//					return typeof(Double);
+            case COLUMN_TYPES.FLOAT:
 					return typeof(float);
-				case ColumnType.Integer:
+            case COLUMN_TYPES.INT:
 					return typeof(int);
-				case ColumnType.LongVarBinary:
-					return typeof(byte[]);
-				case ColumnType.LongVarChar:
+//            case COLUMN_TYPES.LongVarBinary:
+//					return typeof(byte[]);
+//            case COLUMN_TYPES.LongVarChar:
+//					return typeof(string);
+//            case COLUMN_TYPES.Null:
+//					return typeof(DBNull);
+//            case COLUMN_TYPES.Numeric:
+//					return typeof(Decimal);
+//            case COLUMN_TYPES.Other:
+//					return typeof(Object);
+//            case COLUMN_TYPES.Real:
+//					return typeof(float);
+//            case COLUMN_TYPES.SmallInt:
+//					return typeof(Int16);
+//            case COLUMN_TYPES.Time:
+//					return typeof(DateTime);
+//            case COLUMN_TYPES.Timestamp:
+//					return typeof(byte[]);
+//            case COLUMN_TYPES.TINYINT:
+//					return typeof(byte);
+//            case COLUMN_TYPES.VarBinary:
+//					return typeof(byte[]);
+            case COLUMN_TYPES.CHAR:
 					return typeof(string);
-				case ColumnType.Null:
-					return typeof(DBNull);
-				case ColumnType.Numeric:
-					return typeof(Decimal);
-				case ColumnType.Other:
-					return typeof(Object);
-				case ColumnType.Real:
-					return typeof(float);
-				case ColumnType.SmallInt:
-					return typeof(Int16);
-				case ColumnType.Time:
-					return typeof(DateTime);
-				case ColumnType.Timestamp:
-					return typeof(byte[]);
-				case ColumnType.TinyInt:
-					return typeof(byte);
-				case ColumnType.VarBinary:
-					return typeof(byte[]);
-				case ColumnType.VarChar:
-					return typeof(string);
-				case ColumnType.VarCharIgnoreCase:
-					return typeof(string);
+//            case COLUMN_TYPES.VarCharIgnoreCase:
+//					return typeof(string);
 				default:
 					return typeof(Object);
 			}
-*/            
 		}
 
 		internal static bool IsEmpty(string str)
